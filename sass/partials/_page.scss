@@ -1,0 +1,230 @@
+.page-banner {
+    background-color: #000;
+    padding: 80px 0 40px 0;
+    position: relative;
+  }
+  
+  @media (min-width: 530px) {
+  
+    .page-banner {
+      padding: 130px 0 60px 0;
+    }
+  }
+  
+  .page-banner__content {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .page-banner__title {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+    font-size: 3.6rem;
+    margin: 0 0 1rem 0;
+    color: #FFF;
+  }
+  
+  @media (min-width: 530px) {
+  
+    .page-banner__title {
+      font-size: 5rem;
+    }
+  }
+  
+  .page-banner__bg-image {
+    opacity: .33;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .page-banner__intro {
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 1.3;
+    color: #EDEDED;
+  }
+  
+  @media (min-width: 530px) {
+  
+    .page-banner__intro {
+      font-size: 1.65rem;
+    }
+  }
+  
+  .page-banner__intro p {
+    margin: 0;
+  }
+  
+  .container-custom {
+    margin: 0 auto;
+    padding: 0 16px;
+    position: relative;
+    font-size: 1.8rem;
+  }
+  
+  .container--narrow {
+    max-width: 1100px;
+  }
+  
+  
+  .page-section {
+    padding-top: 1.6rem;
+    padding-bottom: 1.6rem;
+  }
+  
+  @media (min-width: 530px) {
+  
+    .page-section {
+      padding-top: 3.5rem;
+      padding-bottom: 3.5rem;
+    }
+  }
+  
+  .page-section--white {
+    background-color: #FFF;
+  }
+  
+  .page-section--beige {
+    background-color: #f0fff2;
+  }
+  
+  .page-section p:last-of-type {
+    margin-bottom: 0;
+  }
+  
+  .metabox {
+    background-color: #f0fff2;
+    border-radius: 3px;
+    padding: 10px 15px;
+    display: inline-block;
+    margin-bottom: 30px;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, .07);
+  
+  }
+  
+  .metabox--position-up {
+    position: absolute;
+    top: 0;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  
+  .metabox--with-home-link {
+    padding: 0;
+  }
+  
+  .metabox--position-up {
+    position: absolute;
+    top: 0;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  
+  .metabox--with-home-link {
+    padding: 0;
+  }
+  
+  .metabox__main {
+    padding: 10px 15px 10px 11px;
+    font-size: 1.8rem;
+  }
+  
+  .metabox p {
+    margin: 0;
+    font-size: .9rem;
+    color: var(--dark-green);
+  }
+  
+  .metabox a {
+    color: var(--dark-green);
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .metabox a:hover {
+    text-decoration: underline;
+  }
+  
+  .metabox .metabox__blog-home-link {
+    background-color: var(--dark-green);
+    color: #FFF;
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 3px 0 0 3px;
+    font-weight: normal;
+    font-size: 1.8rem;
+  }
+  
+  .metabox .metabox__blog-home-link:hover {
+    text-decoration: none;
+    background-color: rgb(5, 72, 39);
+  }
+  
+  .page-links {
+    position: relative;
+    z-index: 1;
+    background-color: #f0fff2;
+    margin: 0 0 40px 0;
+  }
+  
+  
+  .page-links__title {
+    margin: 0;
+    margin-top: 40px;
+    font-weight: normal;
+    text-align: center;
+    padding: 10px 0;
+    background-color: var(--dark-green);
+    color: #FFF;
+  }
+  
+  .page-links__title a {
+    color: #FFF;
+    text-decoration: none;
+    background-color: var(--dark-green);
+  }
+  
+  .page-links li {
+    border-top: 1px solid rgb(158, 167, 160);
+  }
+  
+  .page-links li:first-child {
+    border-top: none;
+  }
+  
+  .page-links__active,
+    .page-links .current_page_item {
+    text-align: center;
+    background-color: #e8fdeb;
+    color: var(--dark-green);
+    font-weight: bold;
+  }
+  
+  .page-links li a {
+    display: block;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    color: #0D3B66;
+    transition: all .3s;
+  }
+  
+  .page-links li a:hover {
+    color:rgb(5, 72, 39);
+    background-color: #daffdf;
+  }
+  
+  
+  .min-list {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .min-list li {
+    list-style: none;
+  }
+  

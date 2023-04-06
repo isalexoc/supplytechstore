@@ -1,0 +1,32 @@
+:root {
+    /* Colors */
+    --dark-green: #283739;
+    --medium-green: #2c5d63; 
+    --clear-green: #7bc67b; 
+    --light-green: #a2c11c; 
+    --soft-grey: #e0e0e0; 
+  }
+
+  // theme colors
+  $primary: var(--dark-green);
+  $secondary: var(--medium-green);
+  $error: var(--light-green);
+  $info: #354774;
+
+  // color palette
+  $colors: (
+    "primary": $primary,
+    "secondary": $secondary,
+    "error": $error,
+    "info": $info,
+    "blue": #050597,
+    "red": #700000,
+    "yellow": #878502,
+    "green": #2c5d63,
+    "purple": #361e63,
+    "gray": #4b4b4b,
+    "black": black,
+    "white": white,
+  );
+
+

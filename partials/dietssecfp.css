@@ -1,0 +1,41 @@
+.diets-container {
+  background: rgba(28, 111, 28, 0.16);
+  font-size: 1.8rem;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.diets-container h3 {
+  margin-bottom: 15px;
+  min-width: 220px;
+  max-width: 280px;
+  flex: 1;
+  padding: 0 15px;
+}
+
+.diets-container ul li {
+  color: #fff;
+  background: var(--dark-green);
+  margin: 5px 0;
+  margin-right: 20px;
+  padding: 10px;
+  font-weight: 500;
+  letter-spacing: 0.3rem;
+  font-size: 1.6rem;
+}
+
+.diets-container ul {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 250px;
+  max-width: 315px;
+  flex: 1;
+}
+
+.diets-container img {
+  width: 220px;
+  height: 220px;
+  margin: 10px auto;
+}

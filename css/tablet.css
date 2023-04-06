@@ -1,0 +1,94 @@
+.container {
+    height: 70px;
+  }
+  
+  .nav-toggle {
+    display: none;
+  }
+
+  .nav-header {
+    display: block;
+  }
+
+  .flex-nav {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+  }
+
+  .nav-links {
+    height: auto;
+  }
+
+  ul {
+    text-align: center;
+  }
+
+  .nav-link {
+    display: inline-block;
+    border-bottom: none;
+    width: auto;
+    padding: 0 10px;
+  }
+
+  .nav-links li a {
+    display: block;
+    padding: 2px 5px;
+  }
+
+  .nav-links li a:hover {
+    background-color: var(--medium-green);
+    border-radius: 10px;
+  }
+
+/*BLOG INGO SECTION*/
+
+  .blog-info {
+    background: linear-gradient(358deg, #edffee, transparent);
+  }
+
+  .blog-info__container {
+    flex-direction: row;
+    max-width: 930px;
+    margin: 0 auto;
+    box-shadow: none;
+  }
+
+  .blog-info-hero {
+    width: 50%;
+  }
+
+  .blog-info-links {
+    width: 50%;
+  }
+
+  .blog-info-hero-text > *{
+    font-size: 1.8rem;
+    line-height: 1.9rem;
+  }
+
+  .link-a > * {
+    font-size: 1.8rem;
+    line-height: 1.7rem;
+  }
+
+  .footer-container {
+    grid-template-columns: 45% 55%;
+    grid-template-areas:
+        "logo logo"
+        "newsletter newsletter"
+        "topics links"
+        "social global"
+        "footer-bottom footer-bottom";
+    grid-template-rows: auto;
+    padding: 0 20px;
+  }
+
+  .newsletter-input {
+    width: 600px;
+  }
+
+  .footer-newsletter {
+    border-bottom: none;
+  }
