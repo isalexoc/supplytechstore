@@ -5,7 +5,7 @@
                 <div class="page-banner__content container-custom container--narrow">
                     <h1 class="page-banner__title"><?php the_title(); ?></h1>
                     <div class="page-banner__intro">
-                    <p>DONT FORGET TO REPLACE ME LATER</p>
+                    <p><?php the_excerpt(  ) ?></p>
                     </div>
                 </div>  
             </div>
@@ -23,7 +23,7 @@
 
             <div class="featured-img">
                <?php if ( has_post_thumbnail() ) {
-                    the_post_thumbnail();
+                    the_post_thumbnail('large');
                 } ?> 
             </div>
 

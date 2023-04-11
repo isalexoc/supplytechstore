@@ -42,6 +42,7 @@
 </section>
 
 <section class="post-section">
+    <h2 class="section-tittle">Artículos nuevos <a class="hero-btn" href=<?php echo site_url('/blog') ?>>Ver todos</a></h2>
     <div class="post-container">
         <?php
             $homepagePosts = new WP_Query(array(
@@ -56,7 +57,7 @@
                         <div class="post-title-content">
                             <div class="category-title"><?php the_category(); ?></div>
                             <h2><a href="<?php the_permalink( ); ?>"><?php the_title( ); ?></a></h2>
-                            <h3><a href="<?php the_permalink( ); ?>"><?php the_excerpt(); ?></a></h3>
+                            <h3><?php echo wp_trim_words( get_the_excerpt(  ), 18 ) ?><a href="<?php the_permalink( ); ?>"> Leer mas</a></h3>
                         </div>
                     </article>
                 </div>
@@ -64,6 +65,49 @@
         ?>
     </div>
 </section>
+
+<section>
+    <h2 class="section-tittle">Productos mas nuevos <a class="hero-btn" href=<?php echo get_post_type_archive_link('products'); ?>>Ver todos</a></h2>
+    <?php 
+        $homePageProducts = new WP_Query(array(
+            'posts_per_page' => 4,
+            'post_type' => 'products'
+        ));?>
+
+        <div class="archive-container-grid">
+
+        <?php while($homePageProducts->have_posts(  )) {
+            $homePageProducts->the_post(  );?>
+            
+            
+                <div class="container_content_archive_product">
+                    <a class="product-img-anchor" href=<?php the_permalink() ?>>
+                        <div class="featured-img featured-img-product">
+                            <?php if ( has_post_thumbnail() ) {
+                                the_post_thumbnail('medium');
+                            } ?> 
+                        </div>
+                    </a>
+                
+                    <div class="category-tag-green">
+                        <h2><a href=<?php the_permalink() ?>><?php the_title(); ?></a></h2>
+                        <span class="cat-p-green-tag"><?php the_terms( get_the_ID(  ), 'cat-products'); ?></span>
+                        <h4><?php echo wp_trim_words( get_the_excerpt(  ), 18 ) ?><a href="<?php the_permalink( ); ?>"> Leer mas</a></h4>
+                    </div>
+
+                </div>
+            
+
+            <?php
+        } wp_reset_postdata(  ); ?>
+
+        </div>
+
+        
+
+</section>
+
+
         <section class="advise-info__section">
             <h2>Alimentos esenciales</h2>
             <div class="advise-info__container">

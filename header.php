@@ -21,11 +21,11 @@
             </div>
             <nav class="nav-links" id="nav-links">
                 <ul>
-                    <li class="nav-link"><a href=<?php echo site_url() ?>>Principal</a></li>
-                    <li class="nav-link"><a href=<?php echo site_url('/blog') ?>>Blog</a></li>
-                    <li class="nav-link"><a href=<?php echo site_url('/acerca-de-mi') ?>>Acerca de mi</a></li>
-                    <li class="nav-link"><a href=<?php echo site_url('/productos') ?>>Productos</a></li>
-                    <li class="nav-link"><a href=<?php echo site_url('/contacto') ?>>Contacto</a></li>
+                    <li class="nav-link"><a href=<?php echo site_url(); ?>>Principal</a></li>
+                    <li class="nav-link"><a href=<?php echo site_url('/blog'); ?>>Blog</a></li>
+                    <li class="nav-link"><a href=<?php echo site_url('/acerca-de-mi'); ?>>Acerca de mi</a></li>
+                    <li class="nav-link"><a href=<?php echo get_post_type_archive_link('products'); ?>>Productos</a></li>
+                    <li class="nav-link"><a href=<?php echo site_url('/contacto'); ?>>Contacto</a></li>
                 </ul>
             </nav>
         </div>

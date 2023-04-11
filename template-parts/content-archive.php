@@ -2,7 +2,7 @@
         <div class="container_content_archive">
             <a href=<?php the_permalink() ?>><div class="featured-img">
                <?php if ( has_post_thumbnail() ) {
-                    the_post_thumbnail('large');
+                    the_post_thumbnail('medium');
                 } ?> 
             </div></a>
             <a href=<?php the_permalink() ?>><div class="category-tag-green">

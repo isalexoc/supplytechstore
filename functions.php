@@ -1,5 +1,21 @@
 <?php
 
+function pageBanner() {
+    //LOGIC HERE
+?>
+    <div class="page-banner">
+        <div class="page-banner__bg-image" style="background-image: url(<?php echo get_theme_file_uri('/assets/imgs/wilma-banner.jpg') ?>);"></div>
+        <div class="page-banner__content container-custom container--narrow">
+            <h1 class="page-banner__title"><?php the_title(); ?></h1>
+            <div class="page-banner__intro">
+            <p><?php the_excerpt(); ?></p>
+            </div>
+        </div>  
+    </div>
+
+    <?php
+}
+
 function wilmanutre_theme_support() {
     // Adding dinamic title tag support
     add_theme_support('title-tag');
@@ -22,6 +38,7 @@ function wilmanutre_register_scripts() {
   }
   
 add_action( 'wp_enqueue_scripts', 'wilmanutre_register_scripts' );
+
 
 
 ?>

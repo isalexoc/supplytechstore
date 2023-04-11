@@ -1,5 +1,5 @@
 .container_content {
-    max-width: 1100px;
+    width: 100%;
     margin: 0 auto;
     padding: 15px;
     font-size: 1.8rem;
@@ -72,22 +72,22 @@
   .tag-single-custom:hover {
     background: rgb(208, 208, 208);
   }
-
+/* purgecss ignore */
   .comments-singlepost {
     list-style: none;
   }
-
+/* purgecss ignore */
   .comments-singlepost img {
     border-radius: 50%;
   }
-
+/* purgecss ignore */
   .comments-singlepost .comment-meta a {
     color: #4a4b4a;
     background: #e4e4e4;
     padding: 0 3px;
     border-radius: 5px;
   }
-
+/* purgecss ignore */
   .comments-singlepost .comment-body p {
     border: 1px dashed #e4eee3;
     border-radius: 5px;
@@ -95,7 +95,7 @@
     background: #f9fcf9;
     box-shadow: 0 3px 4px 0 rgba(0,0,0,.12);
   }
-
+/* purgecss ignore */
   .comments-area .pagination {
     font-size: 2.2rem;
     margin: 15px 0 30px;
@@ -104,6 +104,7 @@
     text-align: center;
   }
 
+/* purgecss ignore */
   .comment-form-comment textarea {
     width: 100%;
     padding: 5px;
@@ -111,7 +112,7 @@
     background: #e8f1eb;
     border-radius: 5px 5px 0 5px;
   }
-
+/* purgecss ignore */
   .comment-form .form-submit .submit {
     font-size: 2rem;
     padding: 5px;
