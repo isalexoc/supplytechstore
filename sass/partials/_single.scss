@@ -119,3 +119,44 @@
     background: var(--dark-green);
     color: white;
   }
+
+  /* purgecss start ignore */
+  section {
+    .sidebar_blog {
+      background: #f4fff8;
+      border: 1px solid var(--dark-green);
+      list-style-type: none;
+    }
+
+    .sidebar_blog > li {
+      padding: 10px;
+      border-bottom: 1px dashed var(--dark-green);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .sidebar_blog li ul li {
+      padding: 5px;
+    }
+  } 
+
+  .blog_content_item {
+    flex: 1 0 32rem;
+  }
+
+  .container_content_product {
+    .with_blog-sidebar {
+      max-width: 355px;
+      display: flex;
+    }
+  }
+
+  .comment-form {
+    p {
+      input {
+        line-height: 2.5rem;
+        font-size: 1.8rem;
+      }
+    }
+  }
+  /* purgecss end ignore */

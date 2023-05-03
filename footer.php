@@ -4,15 +4,16 @@
            <a href=<?php echo site_url() ?>><img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/logo.png" alt="Logo Wilma Nutre"></a>
            </div>
            <div class="footer-newsletter">
-                <form action="">
+                <form id="enquiry">
                     <label for="email">
                         <span>Recibe contenido de expertos en tu correo</span>
                     </label>
                     <div class="newsletter-input">
-                        <input type="email" id="email" placeholder="Ingresa tu email" required>
+                        <input type="email" name="email" placeholder="Ingresa tu email" required>
                         <button type="submit">Reg&iacute;strame</button>
                     </div>
                 </form>
+                <div id="success_message" class="alert-success" style="display:none"></div>
            </div>
            <div class="footer-social">
                <span>S&iacute;gueme</span>
@@ -27,17 +28,17 @@
                         <i class="fa-brands fa-facebook"></i>
                        </li>
                   </a>
-                  <a href="">
+                  <a href="www.tiktok.com/@wilmacorrales205">
                       <li>
                         <i class="fa-brands fa-tiktok"></i>
                      </li>
                 </a>
-                <a href="">
+                <a href="https://www.youtube.com/@wilmanutre">
                      <li>
                         <i class="fa-brands fa-youtube"></i>
                      </li>
                 </a>
-                <a href="">
+                <a href="https://twitter.com/@corrales_wilma">
                      <li>
                         <i class="fa-brands fa-twitter"></i>
                      </li>
@@ -103,6 +104,71 @@
         </div>
     </footer>
 
-    <?php wp_footer() ?>
+    <script>
+
+
+(function($){
+
+
+
+    $('#enquiry').submit( function(event){
+
+
+        event.preventDefault();
+
+        var endpoint = '<?php echo admin_url('admin-ajax.php');?>';
+
+        var form = $('#enquiry').serialize();
+
+        var formdata = new FormData;
+
+        formdata.append('action','enquiry');
+        formdata.append('nonce', '<?php echo wp_create_nonce('ajax-nonce');?>');
+        formdata.append('enquiry', form);
+
+        
+
+        $.ajax(endpoint, {
+
+            type:'POST',
+            data:formdata,
+            processData: false,
+            contentType: false,
+  
+
+            success: function(res){
+
+                    $('#enquiry').fadeOut(200);
+
+                    $('#success_message').text('Gracias, te respondo a la brevedad').show();
+
+                    $('#enquiry').trigger('reset');
+
+                    $('#enquiry').fadeIn(500);
+
+
+
+            },
+
+
+            error: function(err)
+            {
+                alert(err.responseJSON.data);
+
+            }
+
+
+        })
+
+    })
+
+
+
+})(jQuery)
+
+
+</script>
+
+    <?php wp_footer(); ?>
 </body>
 </html>

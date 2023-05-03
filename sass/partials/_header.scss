@@ -5,13 +5,24 @@
   }
 
   .header {
-    background-color: var(--dark-green);
+    /*Make background color var(--dark-green) a little transperent*/
+    background-color: rgba(0, 34, 0, 0.944);
     width: 100%;
+    position: sticky;
+    scroll-behavior: auto;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    transition: .5s;
 
     a {
         color: white;
         text-decoration: none;
     }
+  }
+/* purgecss ignore */
+  .hide{
+    transform: translateY(-100%);
   }
 
   .nav-header {
@@ -47,11 +58,28 @@
 
   .nav-link {
     list-style: none;
-    padding: 20px 0;
+    padding: 12px 0;
     border-bottom: 2px solid white;
     width: auto;
     font-size: 1.7rem;
     text-align: center;
+  }
+
+  /* purgecss ignore */
+  header .menu li .sub-menu .nav-link {
+    padding: 10px 5px;
+    margin: 0 25px;
+    border-bottom: 1px dashed white;
+  }
+  /* purgecss ignore */
+  header .menu li .sub-menu .nav-link:last-of-type {
+    border-bottom: none;
+    margin-bottom: 20px;
+  }
+
+  /* purgecss ignore */
+  header .menu li .sub-menu .nav-link a {
+    color: #dcffda;
   }
 
 .flex-nav {
@@ -73,7 +101,21 @@
 
 /* purgecss ignore */
 .nav-open {
-  height: 100vh;
+  height: auto;
+  max-height: 60vh;
+  overflow-y: scroll; /* Change this from 'auto' to 'scroll' */
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+  scrollbar-width: none; /* For Firefox */
+}
+
+.nav-open::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+}
+
+/* purgecss ignore */
+.no-scroll {
+  overflow: hidden;
+  height: 100%;
 }
 
 .section-tittle {

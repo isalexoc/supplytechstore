@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/tablet.css" media="screen and (min-width: 930px)">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/about.css">
     <?php wp_head(); ?>
 </head>
 <body <?php body_class( ) ?>>

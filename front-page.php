@@ -1,7 +1,11 @@
 <?php get_header(); ?>
 
 <main>
-<section class="hero">
+
+<section>
+    <!--- Create a slide show for the hero --->
+    <div class="hero-slider__container slider">
+        <div class="slide active hero-slider__slide-1 hero">
             <div class="hero-img-container">
                 <div class="hero-message-container">
                     <h1>Alimentación <span>regenerativa.</span></h1>
@@ -10,22 +14,82 @@
                     <h3>"Eres lo <span>que comes."</span></h3>
                 </div>
             </div>
+        </div>
+        
+        <div class="slide hero-slider__slide-2 hero">
+            <div class="hero-img-container">
+                <div class="hero-message-container">
+                    <h1>Descubre los <span>jugos verdes.</span></h1>
+                    <h2>Ricos en antioxidantes, vitaminas y <span>minerales.</span></h2>
+                    <a class="hero-btn" href=<?php echo site_url('/jugos-verdes') ?>>Jugos Verdes</a>
+                    <h3>"Un trago de <span>salud."</span></h3>
+                </div>
+            </div>
+        </div>
+        <div class="slide hero-slider__slide-3 hero">
+            <div class="hero-img-container">
+                <div class="hero-message-container">
+                    <h1>Los frutos secos, <span>aliados saludables.</span></h1>
+                    <h2>Fuente de grasas saludables, proteínas y <span>fibras.</span></h2>
+                    <a class="hero-btn" href=<?php echo site_url('/frutos-secos') ?>>Nueces</a>
+                    <h3>"Energía <span>natural."</span></h3>
+                </div>
+            </div>
+        </div>
+        <div class="slide hero-slider__slide-4 hero">
+            <div class="hero-img-container">
+                <div class="hero-message-container">
+                    <h1>Vitaminas, <span>esenciales para la vida.</span></h1>
+                    <h2>Mejoran la función celular y <span>fortalecen el sistema inmunológico.</span></h2>
+                    <a class="hero-btn" href=<?php echo site_url('/vitaminas') ?>>Vitaminas</a>
+                    <h3>"El motor <span>de nuestro cuerpo."</span></h3>
+                </div>
+            </div>
+        </div>
+        <div class="slide hero-slider__slide-5 hero">
+            <div class="hero-img-container">
+                <div class="hero-message-container">
+                    <h1>Meditación, <span>salud mental y emocional.</span></h1>
+                    <h2>Reduce el estrés y mejora la <span>concentración.</span></h2>
+                    <a class="hero-btn" href=<?php echo site_url('/meditacion') ?>>Meditación</a>
+                    <h3>"La paz interior <span>se cultiva."</span></h3>
+                </div>
+            </div>
+        </div>
+        <div class="navigation">
+            <i class="fas fa-chevron-left prev-btn"></i>
+            <i class="fas fa-chevron-right next-btn"></i>
+        </div>
+        <div class="navigation-visibility">
+            <div class="slide-icon active"></div>
+            <div class="slide-icon"></div>
+            <div class="slide-icon"></div>
+            <div class="slide-icon"></div>
+            <div class="slide-icon"></div>
+        </div>
+    </div>
+</section>
+
+<section class="hero">
             <div class="licenciada">
                 <h2>Licenciada<br><span>Wilma Corrales.</span></h2>
             </div>
             <div class="wilma-info-container">
                 <div class="wilma-img box">
-                    <figure><img src="./wp-content/themes/wilmanutre-theme/assets/imgs/wilma.png" alt="Una foto de la licenciada Wilma Corrales"></figure>
+                    <figure><img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/wilma.png" alt="Una foto de la licenciada Wilma Corrales"></figure>
                 </div>
                 <div class="wilma-info box">
                     <h2>Agenda tu cita ahora.</h2>
-                    <a href="">
+                    <a id="whatsapp-link" href="https://wa.me/15406173054?text=Hola%20Wilma,%20quiero%20agendar%20una%20cita">
                         <p>Chat directo →</p>
                         <img src="./wp-content/themes/wilmanutre-theme/assets/icons/whatsapp-button.png" alt="Boton para chatear por whastapp">
                     </a>
                 </div>
             </div>
 </section>
+
+
+
 <section class="services-main-grid">
     <h2>Cuál te interesa?</h2>
         <div class="services-grid__container">
@@ -39,6 +103,14 @@
             <div class="service-grid__item sg-item-8"><a href=<?php echo site_url('/vitaminas') ?>><span></span><p>Vitaminas</p></a></div>
             <div class="service-grid__item sg-item-9"><a href=<?php echo site_url('/meditacion') ?>><span></span><p>Meditación</p></a></div>      
         </div>
+</section>
+<!-- Search -->
+    <div class="search-form-box">
+        <?php get_search_form(  ); ?>
+    </div>
+    
+<section>
+
 </section>
 
 <section class="post-section">

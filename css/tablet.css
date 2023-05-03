@@ -1,3 +1,4 @@
+/*! purgecss start ignore */
 .container {
     height: 70px;
   }
@@ -19,6 +20,7 @@
 
   .nav-links {
     height: auto;
+    overflow: initial;
   }
 
   ul {
@@ -41,8 +43,31 @@
     background-color: var(--medium-green);
     border-radius: 10px;
   }
+  
+  header .menu li {
+    position: relative;
+  }
 
+  header .menu li .sub-menu {
+    display: none;
+  }
+
+  header .menu .menu-item-has-children:hover .sub-menu {
+    display: block;
+    position:absolute;
+    top: 100%;
+    left: -100%;
+    z-index: 999;
+    width: 200px;
+    background-color: var(--dark-green);
+}
+
+     /*! purgecss end ignore */
+
+  
 /*BLOG INGO SECTION*/
+
+/*! purgecss start ignore */
 
   .blog-info {
     background: linear-gradient(358deg, #edffee, transparent);
@@ -92,3 +117,13 @@
   .footer-newsletter {
     border-bottom: none;
   }
+
+  .slider {
+    height: 75vh;
+  }
+
+  .navigation {
+    height: 75vh;
+  }
+
+    /*! purgecss end ignore */
