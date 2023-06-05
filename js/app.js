@@ -47,7 +47,7 @@ let prevScrollpos = window.pageYOffset;
 			prevScrollpos = currentScrollPos;
 		})
 
-const whatsappLink = document.querySelector('#whatsapp-link');
+const whatsappLink = document.querySelector('.whatsapp-link');
 
 whatsappLink.addEventListener('click', (event) => {
 			event.preventDefault(); // Prevent the default behavior

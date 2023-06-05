@@ -956,7 +956,6 @@ section .sidebar_blog li ul li {
   height: 100%;
   max-width: 380px;
   box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.12);
-  max-height: 418px;
   overflow: hidden;
   /* purgecss ignore */
 }
@@ -972,6 +971,10 @@ section .sidebar_blog li ul li {
   background: rgba(123, 198, 123, 0.8392156863);
   padding: 2.5px 7px;
   font-weight: 600;
+}
+.container_content_archive .category-tag-green ul li {
+  display: inline-block;
+  margin-right: 5px;
 }
 .container_content_archive .category-tag-green .cat-p-green-tag {
   position: absolute;
@@ -996,6 +999,7 @@ section .sidebar_blog li ul li {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  aspect-ratio: 1.6;
 }
 .container_content_archive_product {
   height: 100%;
@@ -1115,6 +1119,66 @@ section .sidebar_blog li ul li {
   place-content: center;
   gap: 18px;
   margin: 40px 15px;
+}
+
+.pagin-cont-product {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.blog main .posts-navigation {
+  display: contents;
+}
+.blog main .posts-navigation .nav-links {
+  display: contents;
+}
+.blog main .posts-navigation .nav-links .nav-next {
+  display: inline-block;
+  margin: 15px 15px 0 15px;
+}
+.blog main .posts-navigation .nav-links .nav-previous {
+  display: inline-block;
+  margin: 15px 15px 0 15px;
+}
+.blog main .posts-navigation .nav-links a {
+  background-color: #edfff8;
+  border-radius: 10px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding: 5px 10px;
+  border: 1px solid #7bc67b;
+}
+
+.blog main .page-numbers, .archive main .page-numbers {
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 5px 2px;
+  border: 1px solid #7bc67b;
+  border-radius: 10px;
+}
+
+.blog main .prev, .archive main .prev {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.blog main .next, .archive main .next {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.post-container .post-link .post .featured-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 1.8;
+}
+
+.post-container .post-link .post .post-title-content .category-title .post-categories li {
+  display: inline-block;
 }
 .page-banner {
   background-color: #000;

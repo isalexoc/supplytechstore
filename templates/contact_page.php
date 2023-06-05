@@ -38,7 +38,7 @@ Template Name: Contact
             <div id="success_message" class="alert-success" style="display:none"></div>
             <div class="wilma-info box center-app">
                     <h2>Agenda tu cita ahora.</h2>
-                    <a href="https://wa.me/15406173054?text=Hola%20Wilma,%20, quiero%20agendar%20una%20cita">
+                    <a class="whatsapp-link" href="https://wa.me/15406173054?text=Hola%20Wilma,%20, quiero%20agendar%20una%20cita">
                         <p>Chat directo →</p>
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/whatsapp-button.png" alt="Boton para chatear por whastapp">
                     </a>

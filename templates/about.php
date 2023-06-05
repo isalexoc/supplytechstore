@@ -8,6 +8,8 @@ Template Name: about
 
 <?php get_header('about');?>  
 
+<main>
+
 <?php pageBanner(); ?>  
 
 <div class="container_about">
@@ -49,5 +51,6 @@ Template Name: about
       </div>
     </div>
 </div>
+</main>
 
 <?php get_footer(); ?>

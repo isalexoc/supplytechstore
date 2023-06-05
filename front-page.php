@@ -80,7 +80,7 @@
                 </div>
                 <div class="wilma-info box">
                     <h2>Agenda tu cita ahora.</h2>
-                    <a id="whatsapp-link" href="https://wa.me/15406173054?text=Hola%20Wilma,%20quiero%20agendar%20una%20cita">
+                    <a class="whatsapp-link" href="https://wa.me/15406173054?text=Hola%20Wilma,%20quiero%20agendar%20una%20cita">
                         <p>Chat directo →</p>
                         <img src="./wp-content/themes/wilmanutre-theme/assets/icons/whatsapp-button.png" alt="Boton para chatear por whastapp">
                     </a>
@@ -125,7 +125,9 @@
                 $homepagePosts->the_post(  ); ?>
                 <div class="post-link">
                     <article class="post">
-                        <?php the_post_thumbnail( 'medium' ); ?>
+                        <div class="featured-img">
+                            <?php the_post_thumbnail( 'medium' ); ?>
+                        </div>
                         <div class="post-title-content">
                             <div class="category-title"><?php the_category(); ?></div>
                             <h2><a href="<?php the_permalink( ); ?>"><?php the_title( ); ?></a></h2>
