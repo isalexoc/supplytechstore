@@ -2,12 +2,11 @@
 
 <main>
 
-    <?php pageBanner(); ?>
     
     <?php if (have_posts()) : ?>
-        <div class="single-product-container">
+        
             <?php while (have_posts()) : the_post(); ?>
-                <?php get_template_part('template-parts/content', 'product'); ?>
+                
             <?php endwhile; ?>
         </div>
 

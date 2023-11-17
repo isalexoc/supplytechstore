@@ -1,0 +1,173 @@
+
+footer .titulof {
+  color: #9999ff !important;
+}
+
+.text-span-footer {
+  color: #9999ff !important;
+}
+
+.header {
+  min-height: 70px;
+}
+
+.navbar {
+  transition: all 0.5s ease-in-out;
+  background: var(--bs-dark);
+}
+
+.navbar-sticky {
+  opacity: 0.8;
+}
+
+.header a {
+  text-decoration: none !important;
+}
+
+.header-dos {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
+    url('../images/header-background-dos.jpg') left center no-repeat;
+  background-size: cover;
+  height: 600px;
+}
+
+.xl-text {
+  font-size: 65px;
+}
+
+.vertical-decoration {
+  top: 12%;
+  width: 24px;
+}
+
+.header-dos .titulo-header {
+  color: #fe6b2a !important;
+}
+
+.header-dos .boton-header {
+  background-color: #fe6b2a !important;
+}
+
+
+.woocommerce-Price-amount {
+  color: #9c0a0a;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.producto-individual li {
+  width: 100% !important;
+}
+
+
+/* Remove underlines from links */
+.woocommerce-MyAccount-navigation ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--bs-primary)
+}
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  font-size: x-large;
+  right: 20px;
+  background-color: #25d366;
+  color: #fff;
+  padding: 0px 10px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Style the form fields */
+.wpcf7-form-control {
+  /* Add Bootstrap form-control styles */
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+}
+
+/* Style the submit button */
+.wpcf7-submit {
+  /* Add Bootstrap button styles */
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  background-color: #007bff;
+  border: 1px solid #007bff;
+  border-radius: 1.2rem;
+  color: #fff;
+  width:100%
+}
+
+.page-id-63 .content-area .container .row {
+  text-align:center;
+}
+
+.stats p {
+  line-height: 35px;
+}
+
+
+@media (max-width: 575px) {
+  .stats p {
+    line-height: 3px;
+  }
+
+  .partners .card-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .partners .card-group .card div {
+    height: auto !important;
+  }
+
+  .partners .card-group .card img {
+    width:300px
+  }
+}
+
+@media (max-width: 767px) {
+  .col-md-3 {
+      width: 50%; /* Display 2 columns on small screens */
+  }
+  .col-md-9 {
+      width: 100%; /* Make the content div full width on small screens */
+  }
+  .stats .stat {
+    border-right: 0 !important;
+    margin-bottom: 40px;
+    border-bottom: var(--bs-dark) solid 1px;
+    padding-bottom: 20px;
+  }
+  
+}
+
+
+
+
+@media (max-width: 991px) {
+  .header .icons-user {
+    display: flex !important;
+  }
+
+  .header .carrito-mobile {
+    display: flex !important;
+  }
+  .xl-text {
+    font-size: 50px;
+  }
+
+  .header-dos {
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)),
+      url('../images/header-background-dos.jpg') center right no-repeat;
+  }
+}
+

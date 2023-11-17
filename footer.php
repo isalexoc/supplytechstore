@@ -1,173 +1,52 @@
-<footer>
-        <div class="footer-container">
-           <div class="footer-logo">
-           <a href=<?php echo site_url() ?>><img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/logo.png" alt="Logo Wilma Nutre"></a>
-           </div>
-           <div class="footer-newsletter">
-                <form id="enquiry">
-                    <label for="email">
-                        <span>Recibe contenido de expertos en tu correo</span>
-                    </label>
-                    <div class="newsletter-input">
-                        <input type="email" name="email" placeholder="Ingresa tu email" required>
-                        <button type="submit">Reg&iacute;strame</button>
-                    </div>
-                </form>
-                <div id="success_message" class="alert-success" style="display:none"></div>
-           </div>
-           <div class="footer-social">
-               <span>S&iacute;gueme</span>
-               <ul class="social-links">
-                  <a href="https://www.instagram.com/wilma_corrales">
-                     <li>
-                         <i class="fa-brands fa-instagram"></i>
-                     </li>
-                  </a>
-                  <a href="https://www.facebook.com/wilmacorralest">
-                       <li>
-                        <i class="fa-brands fa-facebook"></i>
-                       </li>
-                  </a>
-                  <a href="www.tiktok.com/@wilmacorrales205">
-                      <li>
-                        <i class="fa-brands fa-tiktok"></i>
-                     </li>
-                </a>
-                <a href="https://www.youtube.com/@wilmanutre">
-                     <li>
-                        <i class="fa-brands fa-youtube"></i>
-                     </li>
-                </a>
-                <a href="https://twitter.com/@corrales_wilma">
-                     <li>
-                        <i class="fa-brands fa-twitter"></i>
-                     </li>
-                </a>
-               </ul>
-           </div>
-           <div class="footer-topics">
-                <nav>
-                    <ul class="topics-items">
-                        <li>
-                            <a href=<?php echo site_url('/alimentos-esenciales') ?>>Alimentos esenciales</a>
-                        </li>
-                        <li>
-                            <a href=<?php echo site_url('/consejos') ?>>Consejos</a>
-                        </li>
-                        <li>
-                            <a href=<?php echo site_url('/ayuno-intermitente') ?>>Ayuno intermitente</a>
-                        </li>
-                        <li>
-                            <a href=<?php echo site_url('/noticias') ?>>Noticias</a>
-                        </li>
-                    </ul>
-                </nav>
-           </div>
-           <div class="footer-links">
-                <ul class="footer-links__list">
-                    <li><a href=<?php echo site_url('/recetas') ?>>Recetas</a></li>
-                    <li><a href=<?php echo site_url('/jugos-verdes') ?>>Jugos verdes</a></li>
-                    <li><a href=<?php echo site_url('/dietas') ?>>Dietas</a></li>
-                    <li><a href=<?php echo site_url('/super-alimentos') ?>>Super alimentos</a></li>
-                    <li><a href=<?php echo site_url('/perder-peso') ?>>Perder peso</a></li>
-                    <li><a href=<?php echo site_url('/consejos') ?>>Consejos</a></li>
-                    <li><a href=<?php echo site_url('/alimentos-daninos') ?>>Alimentos da&ntilde;inos</a></li>
-                    <li><a href=<?php echo site_url('/vitaminas') ?>>Vitaminas</a></li>
-                    <li><a href=<?php echo site_url('/meditacion') ?>>Meditaci&oacute;n</a></li>
-                    <li><a href=<?php echo site_url('/acerca-de-mi') ?>>Acerca de mi</a></li>
-                    <li><a href=<?php echo site_url('/privacy-policy') ?>>Politica de privacidad</a></li>
-                </ul>
-           </div>
-           <div class="footer-global">
-               <div class="global-container">
-                   <div class="global-nutrition">
-                    <a href=<?php echo site_url() ?>>
-                        Wilma<span>Nutre</span> <span>Nutrici&oacute;n</span>
-                    </a>
-                   </div>
-                   <div class="global-meditation">
-                    <a href=<?php echo site_url('/meditacion') ?>>
-                        Wilma<span>Nutre</span> <span>Meditaci&oacute;n</span>
-                    </a>
-                   </div>
-                   <div class="global-self">
-                    <a href=<?php echo site_url('/autoestima') ?>>
-                        Wilma<span>Nutre</span> <span>Autoestima</span>
-                    </a>
-                   </div>
-               </div>
-           </div>
-           <div class="footer-button">
-            <p>El contenido de WilmaNutre es solo para fines informativos y educativos. Nuestro sitio web no pretende ser un sustituto del consejo, diagnóstico o tratamiento médico profesional.</p>
-            <p>Ⓒ 2023 Ominvestments, LLC. — Todos los derechos reservados</p>
-           </div>
+<footer class="footer text-bg-dark py-5 overflow-hidden">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-4 serv-cli">
+            <h5 class="titulof">Servico al cliente</h5>
+            <ul class="list-unstyled ms-0">
+              <li>Lunes a Viernes de 7:30 am a 6:30 pm</li>
+              <li>Sábados de 8:00 am a 4:00 pm</li>
+              <li>+58 412-2763933</li>
+              <li>+58 424-3189004</li>
+              <li>supplytech.soldaduras@gmail.com </li>
+              <li>R.I.F: J405080078, SUPPLY TECH C.A</li>
+              
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h3 class="titulof">Ubícanos Aquí</h3>
+            <p class="lead">
+            Av. Bolivar Oeste #150 C/C Av. Ayacucho, Edificio Don Antonio, Piso B, Local 2, Sector casco central de Maracay, Edo. Aragua, Zona postal 2101
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h5 class="titulof">Regístrate en nuestros boletines</h5>
+            <?php echo do_shortcode('[contact-form-7 id="035076b" title="Bolentines informativos"]'); ?>
+          </div>
         </div>
+        <hr>
+        <div class="row text-center">
+          <div class="col-md-6 d-flex flex-column justify-content-center">
+            <p>Brindamos a nuestros clientes el mejor <span class="text-span-footer">servicio</span> , variedad, <span class="text-span-footer">calidad</span> y <span class="text-span-footer">valor</span> de productos.</p>
+            <p>© 2023 Supplytechstore - tienda en linea. Todos los derechos reservados</p>
+          </div>
+          <div class="col-md-6">
+          <h5 class="titulof">Connecta con nosotros</h5>
+            <div class="d-flex gap-3 justify-content-center">
+              <a href="https://www.facebook.com/profile.php?id=100054573574236"><i class="fab fa-facebook fa-2x text-white"></i></a>
+              <a href="https://www.instagram.com/supply_tech/"><i class="fab fa-instagram fa-2x text-white"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a class="whatsapp-button" href="https://wa.me/584122763933?text=Hola%20quiero%20mas%20info%20sobre%20los%20productos">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+
     </footer>
 
-    <script>
-
-
-(function($){
-
-
-
-    $('#enquiry').submit( function(event){
-
-
-        event.preventDefault();
-
-        var endpoint = '<?php echo admin_url('admin-ajax.php');?>';
-
-        var form = $('#enquiry').serialize();
-
-        var formdata = new FormData;
-
-        formdata.append('action','enquiry');
-        formdata.append('nonce', '<?php echo wp_create_nonce('ajax-nonce');?>');
-        formdata.append('enquiry', form);
-
-        
-
-        $.ajax(endpoint, {
-
-            type:'POST',
-            data:formdata,
-            processData: false,
-            contentType: false,
-  
-
-            success: function(res){
-
-                    $('#enquiry').fadeOut(200);
-
-                    $('#success_message').text('Gracias, te respondo a la brevedad').show();
-
-                    $('#enquiry').trigger('reset');
-
-                    $('#enquiry').fadeIn(500);
-
-
-
-            },
-
-
-            error: function(err)
-            {
-                alert(err.responseJSON.data);
-
-            }
-
-
-        })
-
-    })
-
-
-
-})(jQuery)
-
-
-</script>
+    
 
     <?php wp_footer(); ?>
 </body>

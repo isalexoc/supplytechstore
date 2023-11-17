@@ -1,29 +1,40 @@
-<?php get_header(); ?>
-<main>
+<?php
+/**
+ * The main template file
+ *
+ * This is the most generic template file in a WordPress theme
+ * and one of the two required files for a theme (the other being style.css).
+ * It is used to display a page when nothing more specific matches a query.
+ * E.g., it puts together the home page when no home.php file exists.
+ *
+ * 
+ */
 
-    <div class="page-banner">
-        <div class="page-banner__bg-image" style="background-image: url(<?php echo get_theme_file_uri('/assets/imgs/wilma-banner.jpg') ?>);"></div>
-        <div class="page-banner__content container-custom container--narrow">
-            <h1 class="page-banner__title">Buscar: <?php the_search_query(  ); ?></h1>
-            <div class="page-banner__intro">
-                <p><?php the_archive_description( ); ?></p>
-            </div>
-        </div>  
-    </div>
-    
-    <?php if (have_posts()) : ?>
-        <div class="archive-container-grid">
-            <?php while (have_posts()) : the_post(); ?>
-                <?php get_template_part('template-parts/content', 'archive-search'); ?>
-            <?php endwhile; ?>
-        </div>
+get_header();
+?>
+		<div class="content-area">
+			<main>
+				<div class="container">
+					<div class="row">
+						<?php 
+							// If there are any posts
+							if( have_posts() ):
 
-        <?php the_posts_navigation(); ?>
-
-        <?php else : ?>
-            <p><?php esc_html_e('Lo siento, no hay artículos en este criterio.'); ?></p>
-    <?php endif; ?>
-    
-</main>
-
+								// Load posts loop
+								while( have_posts() ): the_post();
+									?>
+										<article>
+											<h2><?php the_title(); ?></h2>
+											<div><?php the_content(); ?></div>
+										</article>
+									<?php
+								endwhile;
+							else:
+						?>
+							<p>Nothing to display.</p>
+						<?php endif; ?>
+					</div>
+				</div>
+			</main>
+		</div>
 <?php get_footer(); ?>

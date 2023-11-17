@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <main>
-<?php pageBanner(); ?>
+
 
 <h2 class="section-tittle">Página no encontrada o no existe</h2><br>
 
